@@ -1,19 +1,15 @@
 import { Icon } from "@iconify/react"
 import './Header.css'
-import { useRef, useState } from "react"
+import { useState } from "react"
 
 const Header = () => {
     const [show, setShow] = useState(null);
-    const inputRef = useRef(null)
 
     const handleInputShow = () => {
         show ? setShow(null) : setShow(true);
-        if (inputRef){
-            inputRef.current.setAttribute("autofocus", true)
-        }
     }
     const handleInputBlur = () =>{
-        setShow(null)
+        setShow(null);
     }
 
     return (
@@ -32,7 +28,6 @@ const Header = () => {
                     type="text" 
                     className={show ? "" : "none"}
                     onBlur={handleInputBlur}
-                    ref={inputRef}
                     />
             </nav>
         </header>
