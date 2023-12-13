@@ -1,5 +1,6 @@
 @import url(../../index.css);
 
+
 header{
     padding: 8px 16px;
     display: flex;
@@ -17,11 +18,44 @@ header{
     gap: 8px;
 }
 
+.brand img{
+    height: 40px;
+}
+
 .nav{
     display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
     font-size: 32px;
+    padding: 2px;
+    position: relative;
+}
+
+.nav input{
+    font-size: 20px;
+    padding: 4px 8px;
+    position: absolute;
+    top: 40px;
+    right: -10px;
+    outline: 2px solid var(--pokered);
+    border-radius: 8px;
+    border: none;
 }
 
 .none{
     display: none;
+}
+
+@media screen and (min-width: 1440px){
+    header{
+        padding: 16px 32px;
+    }
+
+    .nav {
+        gap: 16px;
+    }
+    .nav input{
+        position: static;
+    }
 }
