@@ -1,4 +1,5 @@
 import { Icon } from "@iconify/react"
+import logo from '../../assets/pngegg (11).png'
 import './Header.css'
 import { useState } from "react"
 
@@ -15,7 +16,7 @@ const Header = () => {
     return (
         <header>
             <div className="brand">
-                <img src="assets/pngegg (11).png" alt="logo" />
+                <img src={logo} alt="logo" />
                 <h1>GabiDex</h1>
             </div>
             <nav className="nav">
