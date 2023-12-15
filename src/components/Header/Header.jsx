@@ -3,13 +3,13 @@ import './Header.css'
 import { useState } from "react"
 
 const Header = () => {
-    const [show, setShow] = useState(null);
+    const [showInput, setShowInput] = useState(null);
 
     const handleInputShow = () => {
-        show ? setShow(null) : setShow(true);
+        showInput ? setShowInput(null) : setShowInput(true);
     }
     const handleInputBlur = () =>{
-        setShow(null);
+        setShowInput(null);
     }
 
     return (
@@ -26,7 +26,7 @@ const Header = () => {
                 <input 
                     id="busqueda"
                     type="text" 
-                    className={show ? "" : "none"}
+                    className={showInput ? "" : "none"}
                     onBlur={handleInputBlur}
                     />
             </nav>
