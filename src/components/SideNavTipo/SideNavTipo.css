@@ -1,0 +1,189 @@
+.none{
+    display: none;
+}
+
+.all{
+    background-color: rgb(223, 146, 146);
+    color: white;
+}
+
+.normal{
+    background-color: var(--normal);
+    color: white;
+}
+
+.fire{
+    background-color: var(--fuego);
+    color: white;
+}
+
+.water{
+    background-color: var(--agua);
+    color: white;
+}
+
+.grass{
+    background-color: var(--planta);
+    color: white;
+}
+
+.electric{
+    background-color: var(--electrico);
+    color: white;
+}
+
+.ice{
+    background-color: var(--hielo);
+    color: white;
+}
+
+.fighting{
+    background-color: var(--lucha);
+    color: white;
+}
+
+.poison{
+    background-color: var(--veneno);
+    color: white;
+}
+
+.ground{
+    background-color: var(--tierra);
+    color: white;
+}
+
+.flying{
+    background-color: var(--volador);
+    color: white;
+}
+
+.psychic{
+    background-color: var(--psiquico);
+    color: white;
+}
+
+.bug{
+    background-color: var(--bicho);
+    color: white;
+}
+
+.rock{
+    background-color: var(--roca);
+    color: white;
+}
+
+.ghost{
+    background-color: var(--fantasma);
+    color: white;
+}
+
+.dragon{
+    background-color: var(--dragon);
+    color: white;
+}
+
+.dark{
+    background-color: var(--oscuro);
+    color: white;
+}
+
+.steel{
+    background-color: var(--acero);
+    color: white;
+}
+
+.fairy{
+    background-color: var(--hada);
+    color: white;
+}
+
+.shadow{
+    display: none;
+}
+
+.unknown{
+    display: none;
+}
+
+h3{
+    margin-bottom: 5px;
+}
+
+.nav-tipo{
+    position: fixed;flex-direction: column;
+    align-items: center;
+    top: 9vh;
+    z-index: 2;
+    font-size: 16px;
+    padding: 8px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    max-height: 86vh;
+    overflow: scroll;
+    overflow-x: hidden;
+}
+
+ul{
+    list-style: none;
+    text-align: center;
+}
+
+li{
+    padding: 4px;
+    text-shadow: 1px 1px black, -1px 1px black, 1px -1px black, -1px -1px black;
+    margin-bottom: 2px;
+    width: 150px;
+    border-radius: 8px;
+}
+
+svg{
+    font-size: 32px;
+}
+
+::-webkit-scrollbar{
+    width: 5px
+}
+
+::-webkit-scrollbar-thumb{
+    background-color: var(--pokered);
+    border-radius: 8px;
+}
+
+
+
+@media screen and (min-width: 1024px){
+    .nav-tipo svg{
+        display: none;
+    }
+
+    ul{
+        margin-top: 6vh;
+    }
+
+    li{
+        cursor: pointer;
+    }
+
+    .nav-tipo{
+        top: 9vh;
+    }
+
+    .show{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+@media screen and (min-width: 1440px){  
+    .nav-tipo{
+        top: 10vh
+    }
+    
+    li{
+        padding: 7px;
+        margin-bottom: 4px;
+    }
+}
