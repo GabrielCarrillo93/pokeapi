@@ -3,14 +3,14 @@ import Botones from '../Botones/Botones'
 import './CardPokemon.css'
 
 // eslint-disable-next-line react/prop-types
-const CardPokemon = () => {
+const CardPokemon = ({nombre, id, img}) => {
     return (
         <div className='card'>
             <div className='card-title'>
-                <h3>Hola</h3><span></span>
+                <h3>{nombre}</h3><span>{id}</span>
             </div>
             <div className='card-photo'>
-                <img src="" alt="foto" />
+                <img src={img} alt={nombre} />
             </div>
             <div className='card-tipos'>
                 
